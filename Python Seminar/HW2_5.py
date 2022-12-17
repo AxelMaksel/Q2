@@ -8,6 +8,6 @@ import random
 number_list = list(range(10))
 print(number_list)
 for i in range(len(number_list)):
-    n=number_list.pop(i)
-    number_list.insert(random.randint(1,len(number_list)),n)
+    n = number_list.pop(i)
+    number_list.insert(random.randint(1, len(number_list)), n)
 print(number_list)
