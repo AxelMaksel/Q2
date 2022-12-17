@@ -6,11 +6,11 @@
 # - 6 -> [1, 2, 6, 24, 120, 720]
 
 n = int(input("Введите число больше 1: "))
-if n>1:
-    list=[]
+if n > 1:
+    list = []
     p = 1
-    for i in range(1,n+1):
-        p*=i
+    for i in range(1, n+1):
+        p *= i
         list.append(p)
     print(list)
 else:
