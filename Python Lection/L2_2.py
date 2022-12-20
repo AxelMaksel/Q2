@@ -1,7 +1,40 @@
-# 2. Создать список, длины n, значения формируются по формуле 3k + 1,
-#    где k принимает значения от 1 до n включительно.
-num_list = []
-n = int (input ('Введите длину списка '))
-for k in range (1, n+1):
-    num_list.append (k*3+1)
-print (num_list)
+# # def sys(simbol, count=3):
+# #     return simbol*count
+
+
+# # print(sys("q", 5))
+
+
+# dictionary = {}
+# dictionary = \
+#     {
+#         'up': '↑',
+#         'left': '←',
+#         'down': '↓',
+#         'right': '→'
+#     }
+# print(dictionary)  # {'up':'↑', 'left':'←', 'down':'↓', 'right':'→'}
+# print(dictionary['left'])  # ←
+# print(dictionary['up'])   # ↑
+# # типы ключей могут отличаться
+# dictionary['left'] = '⇐=='
+# print(dictionary['left'])  # ⇐
+# #print(dictionary['type'])  # KeyError: 'type'
+# del dictionary['left'] # удаление элемента
+# for item in dictionary: # for (k,v) in dictionary.items():
+#     print('{}: {}'.format(item, dictionary[item]))
+
+
+with open('file.txt', 'w') as data:
+    data.write('line 1\n')
+    data.write('line 2\n')
+
+colors = ['red', 'green', 'blue']
+data = open('file2.txt', 'a')
+data.writelines(colors) # разделителей не будет
+data.close()
+path = 'file.txt'
+data = open(path, 'r')
+for line in data:  
+    print(line)
+data.close()
