@@ -7,9 +7,10 @@
 #         m = n
 # print(f"max {m}")
 
-x = 1
-w = 1
-if !x == !w:
-    print("QW")
-else:
-    print("NO")
+while True:
+    try:
+        i = int(input("Input number "))
+        print(i*i)
+        break
+    except:
+        print("Я СКАЗАЛ ЧИСЛО!")
