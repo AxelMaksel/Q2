@@ -9,6 +9,7 @@ def spisok(count, word='abc'):
     my_list = []
     for i in range(count):
         temp = sample(word, k=3)
+        print(temp)
         my_list.append("".join(temp))
     return my_list
 
