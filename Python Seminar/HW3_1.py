@@ -24,7 +24,6 @@ def sum_list(n_list):
 
 
 n = int(input("Введите размер списка "))
-#print((" ".join(num_list(n,20))))
 q_list = num_list(n, 20)
 print(" ".join(map(str, q_list)))
 print(f"Сумма нечётных элементов: {sum_list(q_list)}")
