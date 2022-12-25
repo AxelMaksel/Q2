@@ -23,12 +23,15 @@
 
 import random
 n = int(input("Ведите размер списка: "))
-ls = []
-for i in range(n):
-    ls.append(random.randint(0,10))
-print(ls)
-ls_new = []
-for i in ls:
-    if ls.count(i) == 1:
-        ls_new.append(i)
-print(ls_new)
+if n>0:
+    ls = []
+    for i in range(n):
+        ls.append(random.randint(0,10))
+    print(ls)
+    ls_new = []
+    for i in ls:
+        if ls.count(i) == 1:
+            ls_new.append(i)
+    print(ls_new)
+else:
+    print("Ошибка ввода")
