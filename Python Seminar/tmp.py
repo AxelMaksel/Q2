@@ -15,20 +15,31 @@
 #     except:
 #         print("Я СКАЗАЛ ЧИСЛО!")
 
-l = {"a": 1, 2: 4}
-for i, o in enumerate(l):
-    print(i, o, l[o])
+# l = {"a": 1, 2: 4}
+# for i, o in enumerate(l):
+#     print(i, o, l[o])
 
-i = [f"{i}" for i in range(1, 8)]
-print(i)
-
-
-def f(ii):
-    ii = int(ii)
-    if ii % 2:
-        return 1
-    return 0
+# i = [f"{i}" for i in range(1, 8)]
+# print(i)
 
 
-q = list(map(lambda x: int(x)*3, i))
+# def f(ii):
+#     ii = int(ii)
+#     if ii % 2:
+#         return 1
+#     return 0
+
+
+# q = list(map(lambda x: int(x)*3, i))
+# print(q)
+
+import random
+
+def MinMax(x, y):
+    return x < y
+
+
+q =list(random.choices(range(10), k=10))
 print(q)
+i=[q[x] for x in range(1,len(q)) if q[x]>q[x-1] ]
+print(i)
